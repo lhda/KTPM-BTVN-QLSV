@@ -1,0 +1,106 @@
+<div id="inputModal" class="modal">
+	<div id="inputModalContent" class="modal-content">
+		<span class="close">&times;</span>
+		<form id="inputForm" action="/add" method="post">
+			<label for="studentId">MSSV:</label>
+			<input
+				type="text"
+				id="studentId"
+				name="studentId"
+				pattern="[0-9]+"
+				required
+				minlength="8"
+				maxlength="8"
+				size="10"
+			/>
+			<br />
+			<br />
+
+			<label for="fullname">Họ tên</label>
+			<input type="text" id="fullname" name="fullname" required size="10" />
+			<br />
+			<br />
+
+			<label for="dob">Ngày tháng năm sinh</label>
+			<input type="date" id="dob" name="dob" required size="10" />
+			<br />
+			<br />
+
+			<label for="gender">Giới tính</label>
+			<select id="gender" name="gender" required>
+				<option value="Nam">Nam</option>
+				<option value="Nữ">Nữ</option>
+			</select>
+			<br />
+			<br />
+
+			<label for="faculty">Khoa</label>
+			<select id="faculty" name="faculty" required>
+				<option value="Khoa Luật">Khoa Luật</option>
+				<option value="Khoa Tiếng Anh">Khoa Tiếng Anh</option>
+				<option value="Khoa Tiếng Nhật">Khoa Tiếng Nhật</option>
+				<option value="Khoa Tiếng Pháp">Khoa Tiếng Pháp</option>
+			</select>
+			<br />
+			<br />
+
+			<label for="class">Khóa</label>
+			<input type="text" id="class" name="class" required size="10" />
+			<br />
+			<br />
+
+			<label for="program">Chương trình</label>
+			<select id="program" name="program" required>
+				<option value="CLC">Chất lượng cao</option>
+				<option value="VP">Việt Pháp</option>
+				<option value="Đại trà">Đại trà</option>
+			</select>
+			<br />
+			<br />
+
+			<label for="address">Địa chỉ</label>
+			<input type="text" id="address" name="address" required size="10" />
+			<br />
+			<br />
+
+			<label for="email">Email</label>
+			<input
+				type="text"
+				id="email"
+				name="email"
+				pattern="([A-Z,a-z,0-9]+\.)*[A-Z,a-z,0-9]+@([A-Z,a-z,0-9]+\.)+[A-Z,a-z,0-9]+"
+				required
+				size="10"
+			/>
+			<span class="validity"></span>
+			<br />
+			<br />
+
+			<label for="phone">Số điện thoại</label>
+			<input
+				type="tel"
+				id="phone"
+				name="phone"
+				pattern="0[1-9][0-9]{8}"
+				minlength="10"
+				maxlength="10"
+				required
+				size="10"
+			/>
+			<span class="validity"></span>
+			<br />
+			<br />
+
+			<label for="status">Tình trạng sinh viên</label>
+			<select id="status" name="status" required>
+				<option value="Đang học">Đang học</option>
+				<option value="Đã tốt nghiệp">Đã tốt nghiệp</option>
+				<option value="Đã thôi học">Đã thôi học</option>
+				<option value="Tạm dừng học">Tạm dừng học</option>
+			</select>
+			<br />
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+</div>
